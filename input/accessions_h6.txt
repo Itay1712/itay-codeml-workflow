@@ -1,5 +1,0 @@
-Ancestral node	Accession	Host
-Node8	AB521805.1	Homo
-Root	JQ993308.1	Sus
-Root	LC406483.1	Sus
-Root	LC406486.1	Sus
