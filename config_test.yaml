@@ -6,7 +6,7 @@ OUTPUT_DIR: ./output_test
 
 GROUP: Astroviridae_43
 GROUPING_COLUMN: Host
-ACCESSIONS_FILE: ./input/test.txt
+ACCESSIONS_FILE: ./input/accessions_test.txt
 REF_ACC: OQ198042.1
 REF_CDS_ID: ""
 ROOTED_TREE_PATH: ./input/rooted_trees/${GROUP}.rooted.anc_recon.tree
@@ -20,5 +20,6 @@ ANALYSIS: site-model
 
 ## overwrite default
 CODEML_RESULTS_DIR: "${OUTPUT_DIR}/codeml/output/${GROUP}_test_$(date +%Y%m%d_%H%M%S)"
+
 
 
