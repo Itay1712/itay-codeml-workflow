@@ -1,3 +1,0 @@
-Ancestral node	Accession	Host
-Node14	AB909124.1	Homo
-Root	JF915746.1	Sus
