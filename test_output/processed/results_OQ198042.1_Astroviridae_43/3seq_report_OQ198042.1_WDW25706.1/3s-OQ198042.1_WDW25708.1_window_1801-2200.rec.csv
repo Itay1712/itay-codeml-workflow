@@ -1,0 +1,2 @@
+P_ACCNUM,Q_ACCNUM,C_ACCNUM,m,n,k,p,HS?,log(p),DS(p),DS(p),min_rec_length,breakpoints
+OQ198050.1 Codon alignment [1801-2200],OQ198042.1 Codon alignment [1801-2200],LC047788.1 Codon alignment [1801-2200],11,85,77,0.005608968437,0,-2.2511,0.03319,3.318542e-02,65,0-1 & 321-335

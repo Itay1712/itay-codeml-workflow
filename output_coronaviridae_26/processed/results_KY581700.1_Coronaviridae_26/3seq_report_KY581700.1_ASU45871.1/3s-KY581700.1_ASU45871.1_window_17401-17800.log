@@ -1,0 +1,58 @@
+════════════════════════════════════════════════════════════════════════════════
+3SEQ -- Full Run
+════════════════════════════════════════════════════════════════════════════════
+
+COMMAND:
+  -f /tmp/tmp.p0ihIq29JR -p /home/itay/bioinfo/viruses/orthologs2/input/PVT.3SEQ.400 -d
+
+Removing identical sequences.
+
+Using 7 sequences as parents.
+Using 7 sequences as children.
+
+Need a p-value of 0.000238095 to survive multiple comparisons correction.
+
+All recombinant triplets will be recorded to the file "3s.rec.csv".
+
+Long recombinants will be recorded to the file "3s.longRec".
+
+Loading P-value table from file
+"/home/itay/bioinfo/viruses/orthologs2/input/PVT.3SEQ.400"
+  Table size : 400 * 400 * 400
+
+────────────────────────────────────────────────────────────────────────────────
+
+                                                Recombinant
+Progress    Time Elapsed    Minimum P-Value    Triplets Found
+100.000%      000:00:00       3.968254e-02                0
+
+────────────────────────────────────────────────────────────────────────────────
+
+Number of triples tested :              210
+Number of p-values computed exactly :   210
+Number of p-values approximated (HS) :  0
+Number of p-values not computed :       0
+
+Number of recombinant triplets :                               	0
+Number of distinct recombinant sequences :                     	0
+Number of distinct recombinant sequences at least 100nt long : 	0
+Longest of short recombinant segments :                        	0nt
+
+────────────────────────────────────────────────────────────────────────────────
+
+Rejection of the null hypothesis of clonal evolution at p = 0.999797
+                                                        p = 9.998e-01
+                                            Uncorrected p = 0.0396825
+                                            Bonferroni  p = 8.33333
+
+────────────────────────────────────────────────────────────────────────────────
+
+The histogram of P-values has been saved in the file "3s.pvalHist".
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+                                            ╔══════════════════════════════════╗
+                                            ║ Log saved at 2025/08/12 00:15:28 ║
+                                            ╚══════════════════════════════════╝
+

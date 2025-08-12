@@ -1,0 +1,1 @@
+>lcl|MH645619.1_prot_AZS54291.1_1 [protein=polyprotein] [protein_id=AZS54291.1] [location=133..10377] [gbkey=CDS]

@@ -1,0 +1,29 @@
+name: codeml_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10  # More compatible version than 3.13 for bio packages
+  - biopython=1.85
+  - numpy
+  - scipy
+  - mafft
+  - gawk
+  - 3seq
+  - seqkit
+  - blast
+  - entrez-direct
+  - ete3
+  - paml
+  - lxml
+  - pyqt
+  - pandas
+  - openpyxl
+  - pip
+  - packaging
+  - setuptools
+  - wheel
+  - pip:
+
+    - git+https://github.com/niemasd/TreeCluster.git

@@ -1,0 +1,2 @@
+P_ACCNUM,Q_ACCNUM,C_ACCNUM,m,n,k,p,HS?,log(p),DS(p),DS(p),min_rec_length,breakpoints
+HM439284.1 Codon alignment [3801-4200],LC406486.1 Codon alignment [3801-4200],JQ993308.1 Codon alignment [3801-4200],22,25,20,0.000001656928,0,-5.7807,0.00959,9.587138e-03,176,220-225 & 400-400

@@ -1,0 +1,23 @@
+Ancestral node	Accession	Host
+Root	AB602440.1	Sus
+Node8	AB521805.1	Homo
+Node8	AB521806.1	Homo
+Node6	AB602439.1	Homo
+Node14	AB909124.1	Homo
+Node12	AB909125.1	Homo
+Root	HM439284.1	Homo
+Root	JF915746.1	Sus
+Root	JQ993308.1	Sus
+Root	LC406482.1	Sus
+Root	LC406483.1	Sus
+Root	LC406484.1	Sus
+Root	LC406485.1	Sus
+Root	LC406486.1	Sus
+Root	LC406487.1	Sus
+Root	LC406488.1	Sus
+Root	LC406489.1	Sus
+Root	LC406490.1	Sus
+Root	LC406491.1	Sus
+Node19	LC406529.1	Homo
+Node14	LC406659.1	Homo
+Root	LC646471.1	Sus

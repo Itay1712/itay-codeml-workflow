@@ -1,0 +1,26 @@
+Ancestral node	Accession	Host
+Node11	AB753012.1	Apodemus
+Node67	FJ402885.1	Homo
+Node67	FJ402886.1	Homo
+Node67	FJ997899.1	Homo
+Node67	GQ228395.1	Homo
+Root	JX534167.1	Ixodes
+Root	KJ739730.1	Ixodes
+Node11	KJ739731.1	Sorex
+Node67	KU761569.1	Homo
+Root	LC440459.1	Ixodes
+Root	MF774565.1	Ixodes
+Root	MG589939.1	Homo
+Root	MH645613.1	Ixodes
+Root	MH645616.1	Ixodes
+Root	MH645619.1	Ixodes
+Root	MN114635.1	Homo
+Node67	MN115817.1	Homo
+Root	MN115818.1	Homo
+Root	MN520110.1	Microtus
+Node64	MN520112.1	Dendrocopos
+Node53	MN520113.1	Ochotona
+Root	MT344092.1	Ixodes
+Node67	MT671301.1	Homo
+Root	MT974474.1	Ixodes
+Root	OQ565596.1	Homo

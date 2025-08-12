@@ -1,0 +1,58 @@
+════════════════════════════════════════════════════════════════════════════════
+3SEQ -- Full Run
+════════════════════════════════════════════════════════════════════════════════
+
+COMMAND:
+  -f /tmp/tmp.UtpgC8F2O7 -p /home/itay/bioinfo/viruses/orthologs2/input/PVT.3SEQ.400 -d
+
+Removing identical sequences.
+
+Using 10 sequences as parents.
+Using 10 sequences as children.
+
+Need a p-value of 6.94444e-05 to survive multiple comparisons correction.
+
+All recombinant triplets will be recorded to the file "3s.rec.csv".
+
+Long recombinants will be recorded to the file "3s.longRec".
+
+Loading P-value table from file
+"/home/itay/bioinfo/viruses/orthologs2/input/PVT.3SEQ.400"
+  Table size : 400 * 400 * 400
+
+────────────────────────────────────────────────────────────────────────────────
+
+                                                Recombinant
+Progress    Time Elapsed    Minimum P-Value    Triplets Found
+100.000%      000:00:00       2.000000e-01                0
+
+────────────────────────────────────────────────────────────────────────────────
+
+Number of triples tested :              720
+Number of p-values computed exactly :   720
+Number of p-values approximated (HS) :  0
+Number of p-values not computed :       0
+
+Number of recombinant triplets :                               	0
+Number of distinct recombinant sequences :                     	0
+Number of distinct recombinant sequences at least 100nt long : 	0
+Longest of short recombinant segments :                        	0nt
+
+────────────────────────────────────────────────────────────────────────────────
+
+Rejection of the null hypothesis of clonal evolution at p = 1
+                                                        p = 1.000e+00
+                                            Uncorrected p = 0.2
+                                            Bonferroni  p = 144
+
+────────────────────────────────────────────────────────────────────────────────
+
+The histogram of P-values has been saved in the file "3s.pvalHist".
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+                                            ╔══════════════════════════════════╗
+                                            ║ Log saved at 2025/08/12 00:15:27 ║
+                                            ╚══════════════════════════════════╝
+

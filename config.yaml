@@ -1,0 +1,22 @@
+# Config file for codeml pipeline
+CODEML_GET_INPUT: true
+CODEML_RUN: true
+CODEML_ANALYSIS: true
+OUTPUT_DIR: ./output_coronaviridae_26
+
+GROUP: Coronaviridae_26
+GROUPING_COLUMN: Host
+ACCESSIONS_FILE: ./input/accessions_c26.txt
+REF_ACC: "" #LC406483.1
+REF_CDS_ID: ""
+
+ROOTED_TREE_PATH: ./input/rooted_trees/${GROUP}.rooted.anc_recon.tree
+TARGET_LABEL: ""
+MAX_TREE_LEAVES: 25
+ALIGN_CODONS_WITH: mafft
+PV_TABLE_FILE: input/PVT.3SEQ.400
+PV_DIM: 400
+STEP: 200
+ANALYSIS: branch-site # branch-site/site-model
+
+

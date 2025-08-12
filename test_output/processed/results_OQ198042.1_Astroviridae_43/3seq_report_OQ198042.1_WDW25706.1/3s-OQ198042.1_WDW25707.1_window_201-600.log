@@ -1,0 +1,18 @@
+════════════════════════════════════════════════════════════════════════════════
+3SEQ -- Full Run
+════════════════════════════════════════════════════════════════════════════════
+
+COMMAND:
+  -f /tmp/tmp.GsetdzjyRG -p /home/itay/bioinfo/viruses/orthologs2/input/PVT.3SEQ.400 -d
+
+Removing identical sequences.
+
+ERROR: The number of sequences is not enough (at least 3 sequences needed).
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+                                            ╔══════════════════════════════════╗
+                                            ║ Log saved at 2025/08/10 16:44:44 ║
+                                            ╚══════════════════════════════════╝
+

@@ -1,0 +1,1129 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Globals written to ./scripts/globals.sh
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   940  100   940    0     0   5019      0 --:--:-- --:--:-- --:--:--  5026
+!!! PV_DIM too large (700) — resetting to 400
+Globals written to ./globals.sh
+*************************** GETTING CODEML INPUT ***************************
+true
+/home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/output/Astroviridae_43_test_20250808_034339
+########################################### PREPARING SAMPLES ###########################################
+Missing samples at /home/itay/bioinfo/viruses/orthologs2/./input/rooted_trees/Astroviridae_43.rooted.anc_recon.tree:\nLC047789.1,LC047791.1,LC047792.1,LC047794.1,LC047795.1,LC047799.1,LC047801.1,ON624258.1,ON624262.1,ON624270.1,ON624274.1,ON624283.1,ON682273.1,ON682274.1,ON682275.1,ON682277.1,ON682279.1,ON682281.1,ON682283.1,ON682285.1,ON682288.1,ON682291.1,ON682300.1,ON682301.1,ON682302.1
+########################################### TREE PIPELINE ###########################################
+=== Step 1: Cleaning tree labels ===
+=== Step 2: Removing internal node names ===
+leaf only tree saved in /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_leaf_only.tree
+Pruned tree saved as '/home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_pruned.tree'
+=== Step 3: Mark tree ===
+Marked tree saved as /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_pruned_marked.tree
+=== Step 4: Reducing background clades ===
+Tree has 3 leaves — using full tree.
+Final reduced tree written to: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_pruned_marked_reduced.tree
+Marked reduced tree saved as /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_pruned_marked_reduced.tree
+Final tree saved as /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43.tree
+=== Pipeline complete ===
+Number of leaves in the reduced tree: 3
+Comparing: 'OQ198042.1' vs 'OQ198050.1'
+Comparing: 'OQ198050.1' vs 'OQ198050.1'
+Comparing: 'LC047788.1' vs 'OQ198050.1'
+########################################### PHYLIP PIPELINE ###########################################
+[Stage 1] Getting reference and targets...
++--------------+
+| Ref:         |
+| - OQ198042.1 |
+| Targets:     |
+| - OQ198050.1 |
+| - LC047788.1 |
++--------------+
+[Stage 2] Finding orthologs...
+find_orthologs.sh | [REF] extracting only  from OQ198042.1…
+find_orthologs.sh | [REF] building reference BLAST DB…
+
+
+Building a new DB, current time: 08/08/2025 03:43:44
+New DB name:   /home/itay/bioinfo/viruses/orthologs2/test_output/processed/results_OQ198042.1_Astroviridae_43/ref_prot_db
+New DB title:  /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/ref_proteins.fasta
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 3 sequences in 0.000484943 seconds.
+
+
+find_orthologs.sh | [REF] preparing global FASTAs for each ref CDS…
+find_orthologs.sh | [ALL] Stage 2: fetching all target FASTAs…
+find_orthologs.sh | [ALL] Stage 3: building target BLAST DBs…
+
+
+Building a new DB, current time: 08/08/2025 03:43:50
+
+
+Building a new DB, current time: 08/08/2025 03:43:50
+New DB name:   /home/itay/bioinfo/viruses/orthologs2/test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/LC047788.1/LC047788.1_prot_db
+New DB name:   /home/itay/bioinfo/viruses/orthologs2/test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/OQ198050.1/OQ198050.1_prot_db
+New DB title:  /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/LC047788.1/LC047788.1_proteins.fasta
+New DB title:  /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/OQ198050.1/OQ198050.1_proteins.fasta
+Sequence type: Protein
+Sequence type: Protein
+Keep MBits: T
+Keep MBits: T
+Maximum file size: 3000000000B
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 3 sequences in 0.000321865 seconds.
+Adding sequences from FASTA; added 3 sequences in 0.000320911 seconds.
+
+
+
+
+find_orthologs.sh | [ALL] Stage 4: reciprocal‐BLAST + append to globals…
+[Stage 3] Processing each ref CDS...
+cdssssssssssssss WDW25706.1
+
+
+
+
+========================================== Processing CDS: [OQ198042.1_WDW25706.1] ==========================================
+
+
+
+
+
+
+--------------[3.1] Codon alignment
+
+
+/home/itay/miniconda3/envs/codeml_env/lib/python3.10/site-packages/Bio/SeqIO/FastaIO.py:203: BiopythonDeprecationWarning: Previously, the FASTA parser silently ignored comments at the beginning of the FASTA file (before the first sequence).
+
+Nowadays, the FASTA file format is usually understood not to have any such comments, and most software packages do not allow them. Therefore, the use of comments at the beginning of a FASTA file is now deprecated in Biopython.
+
+In a future Biopython release, this deprecation warning will be replaced by a ValueError. To avoid this, there are three options:
+
+(1) Modify your FASTA file to remove such comments at the beginning of the file.
+
+(2) Use SeqIO.parse with the 'fasta-pearson' format instead of 'fasta'. This format is consistent with the FASTA format defined by William Pearson's FASTA aligner software. Thie format allows for comments before the first sequence; lines starting with the ';' character anywhere in the file are also regarded as comment lines and are ignored.
+
+(3) Use the 'fasta-blast' format. This format regards any lines starting with '!', '#', or ';' as comment lines. The 'fasta-blast' format may be safer than the 'fasta-pearson' format, as it explicitly indicates which lines are comments. 
+  warnings.warn(
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: 8192 kb
+rescale = 1
+All-to-all alignment.
+    0 / 3    1 / 3tbfast-pair (aa) Version 7.525
+alg=L, model=BLOSUM62, 2.00, -0.10, +0.10, noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 3
+done.
+
+Progressive alignment ... 
+STEP     1 /2 STEP     2 /2 
+done.
+tbfast (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+rescale = 1
+
+    0 / 3
+Segment   1/  1    1-1305
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-1  identical.   STEP 002-002-1  identical.   STEP 002-001-0  identical.   STEP 002-001-1  identical.   
+Converged.
+
+done
+dvtditr (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Warning] Sequence ended with a stop codon - translated 1304 aa from 1305 codons.
+[Warning] Sequence ended with a stop codon - translated 1187 aa from 1188 codons.
+[Warning] Sequence ended with a stop codon - translated 1304 aa from 1305 codons.
+Initial aligned FASTA file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25706.1/aligned_codons.fasta
+
+
+--------------[3.2] Masking poorly aligned regions
+
+
+Found 1 poor region(s):
+  Codons 80-80 (nt 238-240)
+Masked FASTA written to /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25706.1/aligned_codons_masked_poor.fasta
+
+
+--------------[3.3] Recombination filtering report
+
+
+Max sequence length: 3912 nt
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1-400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_501-900.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1001-1400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1501-1900.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_2001-2400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_2501-2900.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_3001-3400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_3501-3900.fasta
+Running 3SEQ on window: window_1-400
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_1-400 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_1001-1400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_1001-1400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_1501-1900
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_1501-1900 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_2001-2400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_2001-2400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_2501-2900
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_2501-2900 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_3001-3400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_3001-3400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_3501-3900
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_3501-3900 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_501-900
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_501-900 — only 2 unique sequences (need ≥ 3)
+
+
+--------------[3.4] Masking recombination regions
+
+
+No mask file for  — skipping masking recom regions
+
+
+--------------[3.5] Convert to Phylip
+
+
+Phylip file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43_OQ198042.1_WDW25706.1.phy
+=== Pipeline complete ===
+cdssssssssssssss WDW25707.1
+
+
+
+
+========================================== Processing CDS: [OQ198042.1_WDW25707.1] ==========================================
+
+
+
+
+
+
+--------------[3.1] Codon alignment
+
+
+/home/itay/miniconda3/envs/codeml_env/lib/python3.10/site-packages/Bio/SeqIO/FastaIO.py:203: BiopythonDeprecationWarning: Previously, the FASTA parser silently ignored comments at the beginning of the FASTA file (before the first sequence).
+
+Nowadays, the FASTA file format is usually understood not to have any such comments, and most software packages do not allow them. Therefore, the use of comments at the beginning of a FASTA file is now deprecated in Biopython.
+
+In a future Biopython release, this deprecation warning will be replaced by a ValueError. To avoid this, there are three options:
+
+(1) Modify your FASTA file to remove such comments at the beginning of the file.
+
+(2) Use SeqIO.parse with the 'fasta-pearson' format instead of 'fasta'. This format is consistent with the FASTA format defined by William Pearson's FASTA aligner software. Thie format allows for comments before the first sequence; lines starting with the ';' character anywhere in the file are also regarded as comment lines and are ignored.
+
+(3) Use the 'fasta-blast' format. This format regards any lines starting with '!', '#', or ';' as comment lines. The 'fasta-blast' format may be safer than the 'fasta-pearson' format, as it explicitly indicates which lines are comments. 
+  warnings.warn(
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: 8192 kb
+rescale = 1
+All-to-all alignment.
+    0 / 3    1 / 3tbfast-pair (aa) Version 7.525
+alg=L, model=BLOSUM62, 2.00, -0.10, +0.10, noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 3
+done.
+
+Progressive alignment ... 
+STEP     1 /2 STEP     2 /2 
+done.
+tbfast (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+rescale = 1
+
+    0 / 3
+Segment   1/  1    1- 817
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-1  identical.   STEP 002-002-1  identical.   STEP 002-001-0  identical.   STEP 002-001-1  identical.   
+Converged.
+
+done
+dvtditr (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Warning] Sequence ended with a stop codon - translated 816 aa from 817 codons.
+[Warning] Sequence ended with a stop codon - translated 699 aa from 700 codons.
+[Warning] Sequence ended with a stop codon - translated 816 aa from 817 codons.
+Initial aligned FASTA file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25707.1/aligned_codons.fasta
+
+
+--------------[3.2] Masking poorly aligned regions
+
+
+Found 1 poor region(s):
+  Codons 80-80 (nt 238-240)
+Masked FASTA written to /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25707.1/aligned_codons_masked_poor.fasta
+
+
+--------------[3.3] Recombination filtering report
+
+
+Max sequence length: 2448 nt
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1-400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_501-900.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1001-1400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1501-1900.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_2001-2400.fasta
+Running 3SEQ on window: window_1-400
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_1-400 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_1001-1400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_1001-1400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_1501-1900
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_1501-1900 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_2001-2400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_2001-2400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_501-900
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_501-900 — only 2 unique sequences (need ≥ 3)
+
+
+--------------[3.4] Masking recombination regions
+
+
+No mask file for  — skipping masking recom regions
+
+
+--------------[3.5] Convert to Phylip
+
+
+Phylip file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43_OQ198042.1_WDW25707.1.phy
+=== Pipeline complete ===
+cdssssssssssssss WDW25708.1
+
+
+
+
+========================================== Processing CDS: [OQ198042.1_WDW25708.1] ==========================================
+
+
+
+
+
+
+--------------[3.1] Codon alignment
+
+
+/home/itay/miniconda3/envs/codeml_env/lib/python3.10/site-packages/Bio/SeqIO/FastaIO.py:203: BiopythonDeprecationWarning: Previously, the FASTA parser silently ignored comments at the beginning of the FASTA file (before the first sequence).
+
+Nowadays, the FASTA file format is usually understood not to have any such comments, and most software packages do not allow them. Therefore, the use of comments at the beginning of a FASTA file is now deprecated in Biopython.
+
+In a future Biopython release, this deprecation warning will be replaced by a ValueError. To avoid this, there are three options:
+
+(1) Modify your FASTA file to remove such comments at the beginning of the file.
+
+(2) Use SeqIO.parse with the 'fasta-pearson' format instead of 'fasta'. This format is consistent with the FASTA format defined by William Pearson's FASTA aligner software. Thie format allows for comments before the first sequence; lines starting with the ';' character anywhere in the file are also regarded as comment lines and are ignored.
+
+(3) Use the 'fasta-blast' format. This format regards any lines starting with '!', '#', or ';' as comment lines. The 'fasta-blast' format may be safer than the 'fasta-pearson' format, as it explicitly indicates which lines are comments. 
+  warnings.warn(
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: 8192 kb
+rescale = 1
+All-to-all alignment.
+    0 / 3    1 / 3tbfast-pair (aa) Version 7.525
+alg=L, model=BLOSUM62, 2.00, -0.10, +0.10, noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 3
+done.
+
+Progressive alignment ... 
+STEP     1 /2 STEP     2 /2 
+done.
+tbfast (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+rescale = 1
+
+    0 / 3
+Segment   1/  1    1- 750
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-1  identical.   STEP 002-002-1  identical.   STEP 002-001-0  identical.   STEP 002-001-1  identical.   
+Converged.
+
+done
+dvtditr (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Warning] Sequence ended with a stop codon - translated 744 aa from 745 codons.
+[Warning] Sequence ended with a stop codon - translated 746 aa from 747 codons.
+[Warning] Sequence ended with a stop codon - translated 744 aa from 745 codons.
+Initial aligned FASTA file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25708.1/aligned_codons.fasta
+
+
+--------------[3.2] Masking poorly aligned regions
+
+
+No poorly aligned regions found
+Masked FASTA written to /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25708.1/aligned_codons_masked_poor.fasta
+
+
+--------------[3.3] Recombination filtering report
+
+
+Max sequence length: 2247 nt
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1-400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_501-900.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1001-1400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1501-1900.fasta
+Running 3SEQ on window: window_1-400
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25708.1_window_1-400 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_1001-1400
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25708.1_window_1001-1400 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_1501-1900
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25708.1_window_1501-1900 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_501-900
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25708.1_window_501-900 — 3SEQ output not generated (likely <3 unique sequences)
+
+
+--------------[3.4] Masking recombination regions
+
+
+No mask file for  — skipping masking recom regions
+
+
+--------------[3.5] Convert to Phylip
+
+
+Phylip file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43_OQ198042.1_WDW25708.1.phy
+=== Pipeline complete ===
+*************************** RUNNING CODEML ***************************
+Running codeml on Astroviridae_43_OQ198042.1_WDW25706.1...
+
+CODONML in paml version 4.10.7, June 2023
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+ns = 3  	ls = 3912
+Reading sequences, sequential format..
+Reading seq # 1: OQ198042.1       Reading seq # 2: OQ198050.1       Reading seq # 3: LC047788.1       
+Sequences read..
+Counting site patterns..  0:00
+Compressing,    331 patterns at   1304 /   1304 sites (100.0%),  0:00
+Collecting fpatt[] & pose[],    331 patterns at   1304 /   1304 sites (100.0%),  0:00
+2 ambiguous codons are seen in the data:
+ NNN ---
+Counting codons..
+
+
+       24 bytes for distance
+   323056 bytes for conP
+     5296 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+((3, 1), 2);   MP score: -1
+    0.581628    0.449250    1.033680    1.018122    0.912806    1.012190    0.891595    0.480229
+
+ntime & nrate & np:     2     5     8
+
+Bounds (np=8):
+   0.000004   0.000001   0.000100   0.000010   0.000001   0.000100   0.000100   0.000100
+  50.000000   0.999999 999.000000   0.999990   1.000000 999.000000 999.000000 999.000000
+Qfactor_NS = 10.719941
+
+np =     8
+lnL0 = -8893.307107
+
+Iterating by ming2
+Initial: fx=  8893.307107
+x=  0.58163  0.44925  1.03368  0.95237  0.91281  1.01219  0.89160  0.48023
+
+  1 h-m-p  0.0000 0.0004 1683.5785 ++YCYYCCCC  8245.760076  7 0.0003    27 | 0/8
+  2 h-m-p  0.0000 0.0001 2172.4255 ++     8096.942859  m 0.0001    38 | 1/8
+  3 h-m-p  0.0000 0.0000 19013.9552 +
+    0.155496    0.796947    1.129331    0.999990    0.900290    1.010631    1.003692    0.000100
+
+lfundG: h=   4  fhK=-9.430851e-07
+data: AAA (K) AAA (K) AGA (R) 
+YYCYCCC  8006.386685  6 0.0000    59 | 1/8
+  4 h-m-p  0.0000 0.0000 3051.6042 +YCYCCC  7987.949485  5 0.0000    79 | 1/8
+  5 h-m-p  0.0003 0.0085 145.5495 +YCCC  7980.768350  3 0.0007    96 | 1/8
+  6 h-m-p  0.0022 0.0469  43.8619 +CYCC  7968.197891  3 0.0095   113 | 1/8
+  7 h-m-p  0.0110 0.0550  26.5140 CCCC   7963.543479  3 0.0040   130 | 1/8
+  8 h-m-p  0.0082 0.0411   9.3093 ++     7829.411201  m 0.0411   141 | 2/8
+  9 h-m-p  0.5585 8.0000   0.5167 +CYCCC  7801.979402  4 1.8421   160 | 2/8
+ 10 h-m-p  1.6000 8.0000   0.0932 CCC    7799.637218  2 1.4855   181 | 2/8
+ 11 h-m-p  1.6000 8.0000   0.0751 CCC    7799.098789  2 2.3354   202 | 2/8
+ 12 h-m-p  1.6000 8.0000   0.0090 CC     7799.083349  1 1.9683   221 | 2/8
+ 13 h-m-p  1.6000 8.0000   0.0013 C      7799.078806  0 1.6000   238 | 2/8
+ 14 h-m-p  0.5862 8.0000   0.0036 +C     7799.075741  0 2.3060   256 | 2/8
+ 15 h-m-p  1.6000 8.0000   0.0022 C      7799.074944  0 1.4296   273 | 2/8
+ 16 h-m-p  1.6000 8.0000   0.0003 Y      7799.074940  0 1.1160   290 | 2/8
+ 17 h-m-p  1.6000 8.0000   0.0000 Y      7799.074940  0 1.1062   307 | 2/8
+ 18 h-m-p  1.6000 8.0000   0.0000 Y      7799.074940  0 1.6000   324 | 2/8
+ 19 h-m-p  1.6000 8.0000   0.0000 --------Y  7799.074940  0 0.0000   349
+Out..
+lnL  = -7799.074940
+350 lfun, 1050 eigenQcodon, 2800 P(t)
+
+Time used:  0:01
+
+CODONML in paml version 4.10.7, June 2023
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+ns = 3  	ls = 3912
+Reading sequences, sequential format..
+Reading seq # 1: OQ198042.1       Reading seq # 2: OQ198050.1       Reading seq # 3: LC047788.1       
+Sequences read..
+Counting site patterns..  0:00
+Compressing,    331 patterns at   1304 /   1304 sites (100.0%),  0:00
+Collecting fpatt[] & pose[],    331 patterns at   1304 /   1304 sites (100.0%),  0:00
+2 ambiguous codons are seen in the data:
+ NNN ---
+Counting codons..
+
+
+       24 bytes for distance
+   323056 bytes for conP
+     7944 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+((3, 1), 2);   MP score: -1
+    0.377894    0.781338    1.031641    1.024013    0.900513    0.998002    1.557975    0.372536    0.308654    1.168261
+
+ntime & nrate & np:     2     6    10
+
+Bounds (np=10):
+   0.000004   0.000001   0.000100 -99.000000 -99.000000   0.000001   1.000000   0.000100   0.000100   0.000100
+  50.000000   0.999999 999.000000  99.000000  99.000000   1.000000 999.000000 999.000000 999.000000 999.000000
+Qfactor_NS = 10.334501
+
+np =    10
+lnL0 = -8426.401837
+
+Iterating by ming2
+Initial: fx=  8426.401837
+x=  0.37789  0.78134  1.03164  1.02401  0.90051  0.95238  1.55797  0.37254  0.30865  1.16826
+
+  1 h-m-p  0.0000 0.0004 1275.4125 ++YYYCYCCCCC  8215.685260  9 0.0002    31 | 0/10
+  2 h-m-p  0.0000 0.0001 1470.6244 ++     8047.191318  m 0.0001    44 | 1/10
+  3 h-m-p  0.0000 0.0000 1321.9003 ++     8016.769147  m 0.0000    57 | 2/10
+  4 h-m-p  0.0000 0.0001 486.2151 ++     8008.556362  m 0.0001    70 | 3/10
+  5 h-m-p  0.0001 0.0027 276.1427 +++    7944.881325  m 0.0027    84 | 4/10
+  6 h-m-p  0.0167 0.1122  40.4562 CYCCC  7852.700080  4 0.0191   104 | 3/10
+  7 h-m-p  0.0004 0.0022 1672.6081 -CYCC  7851.010566  3 0.0000   123 | 3/10
+  8 h-m-p  0.0002 0.0454 153.7730 +YCCC  7826.117956  3 0.0019   142 | 3/10
+  9 h-m-p  0.0067 0.0337  34.1504 +YCC   7807.935271  2 0.0286   159 | 3/10
+ 10 h-m-p  0.0156 0.0780   8.9176 +YYCCCC  7800.984683  5 0.0504   181 | 3/10
+ 11 h-m-p  0.1176 7.2281   3.8216 YCCCC  7799.507546  4 0.0644   201 | 3/10
+ 12 h-m-p  0.6216 3.1081   0.1944 +YCCC  7794.992242  3 1.7303   220 | 3/10
+ 13 h-m-p  0.4017 2.0084   0.1277 YCCC   7794.530087  3 1.0157   245 | 3/10
+ 14 h-m-p  1.6000 8.0000   0.0603 YCC    7794.363537  2 1.1078   268 | 3/10
+ 15 h-m-p  0.5709 2.8545   0.0599 +YC    7794.242056  1 1.4612   290 | 3/10
+ 16 h-m-p  1.4703 7.3515   0.0205 CC     7794.218390  1 1.8840   312 | 3/10
+ 17 h-m-p  0.7353 3.6767   0.0162 YC     7794.208623  1 1.7771   333 | 2/10
+ 18 h-m-p  0.9164 4.5818   0.0279 Y      7794.208495  0 0.1409   353 | 2/10
+ 19 h-m-p  0.0711 0.3555   0.0133 ++     7794.208112  m 0.3555   374 | 3/10
+ 20 h-m-p  1.6000 8.0000   0.0013 Y      7794.208081  0 1.0285   395 | 3/10
+ 21 h-m-p  1.6000 8.0000   0.0005 Y      7794.208076  0 0.7795   415 | 3/10
+ 22 h-m-p  1.6000 8.0000   0.0002 +Y     7794.208072  0 4.2098   436 | 3/10
+ 23 h-m-p  1.6000 8.0000   0.0003 Y      7794.208066  0 3.6437   456 | 3/10
+ 24 h-m-p  1.6000 8.0000   0.0000 Y      7794.208066  0 1.0902   476 | 3/10
+ 25 h-m-p  1.6000 8.0000   0.0000 C      7794.208066  0 0.4000   496 | 2/10
+ 26 h-m-p -0.0000 -0.0000   0.0000 
+h-m-p:     -6.36973236e-15     -3.18486618e-14      5.72980360e-06  7794.208066
+..  | 2/10
+ 27 h-m-p  0.0160 8.0000   0.0005 ------------- | 2/10
+ 28 h-m-p  0.0160 8.0000   0.0005 -------------
+Out..
+lnL  = -7794.208066
+578 lfun, 2312 eigenQcodon, 6936 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -7825.843887  S = -7575.781250  -240.964407
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 331 patterns   0:03	did  20 / 331 patterns   0:03	did  30 / 331 patterns   0:03	did  40 / 331 patterns   0:03	did  50 / 331 patterns   0:03	did  60 / 331 patterns   0:03	did  70 / 331 patterns   0:03	did  80 / 331 patterns   0:03	did  90 / 331 patterns   0:03	did 100 / 331 patterns   0:03	did 110 / 331 patterns   0:03	did 120 / 331 patterns   0:03	did 130 / 331 patterns   0:03	did 140 / 331 patterns   0:03	did 150 / 331 patterns   0:03	did 160 / 331 patterns   0:03	did 170 / 331 patterns   0:03	did 180 / 331 patterns   0:03	did 190 / 331 patterns   0:03	did 200 / 331 patterns   0:03	did 210 / 331 patterns   0:03	did 220 / 331 patterns   0:03	did 230 / 331 patterns   0:03	did 240 / 331 patterns   0:03	did 250 / 331 patterns   0:03	did 260 / 331 patterns   0:03	did 270 / 331 patterns   0:03	did 280 / 331 patterns   0:03	did 290 / 331 patterns   0:03	did 300 / 331 patterns   0:03	did 310 / 331 patterns   0:03	did 320 / 331 patterns   0:03	did 330 / 331 patterns   0:03	did 331 / 331 patterns   0:03
+Time used:  0:03
+Running codeml on Astroviridae_43_OQ198042.1_WDW25707.1...
+
+CODONML in paml version 4.10.7, June 2023
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+ns = 3  	ls = 2448
+Reading sequences, sequential format..
+Reading seq # 1: OQ198042.1       Reading seq # 2: OQ198050.1       Reading seq # 3: LC047788.1       
+Sequences read..
+Counting site patterns..  0:00
+Compressing,    306 patterns at    816 /    816 sites (100.0%),  0:00
+Collecting fpatt[] & pose[],    306 patterns at    816 /    816 sites (100.0%),  0:00
+2 ambiguous codons are seen in the data:
+ NNN ---
+Counting codons..
+
+
+       24 bytes for distance
+   298656 bytes for conP
+     4896 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+((3, 1), 2);   MP score: -1
+    0.476829    0.581646    0.987810    1.083394    0.957491    0.981353    0.645779    0.149356
+
+ntime & nrate & np:     2     5     8
+
+Bounds (np=8):
+   0.000004   0.000001   0.000100   0.000010   0.000001   0.000100   0.000100   0.000100
+  50.000000   0.999999 999.000000   0.999990   1.000000 999.000000 999.000000 999.000000
+Qfactor_NS = 12.035263
+
+np =     8
+lnL0 = -5468.408514
+
+Iterating by ming2
+Initial: fx=  5468.408514
+x=  0.47683  0.58165  0.98781  0.95237  0.95749  0.98135  0.64578  0.14936
+
+  1 h-m-p  0.0000 0.0002 959.8926 +++    5263.456539  m 0.0002    14 | 1/8
+  2 h-m-p  0.0000 0.0000 2496.4061 ++     5206.625222  m 0.0000    25 | 2/8
+  3 h-m-p  0.0004 0.0021 158.2998 +YCCC  5194.502929  3 0.0011    42 | 2/8
+  4 h-m-p  0.0112 0.0715  15.1994 CCC    5193.794073  2 0.0033    57 | 2/8
+  5 h-m-p  0.0031 0.0729  16.3277 CCC    5192.480119  2 0.0048    72 | 2/8
+  6 h-m-p  0.0031 0.2012  25.6367 +YCCCC  5176.396915  4 0.0289    91 | 2/8
+  7 h-m-p  0.0063 0.0313   6.3171 ++     5109.060660  m 0.0313   102 | 2/8
+  8 h-m-p  0.0000 0.0000 11141.7251 
+    0.074639    0.999999    1.789551    0.999990    0.836664    1.029810    1.024391    0.058358
+
+lfundG: h=   5  fhK=-1.039834e-09
+data: AAA (K) AAA (K) CGC (R) 
+YYYYYYCYCC  5087.315045 10 0.0000   125 | 2/8
+  9 h-m-p  0.6662 8.0000   0.2023 
+    0.275992    0.999999    2.289676    0.999990    0.868189    0.847564    1.069152    0.059645
+
+lfundG: h=   5  fhK=-3.811524e-08
+data: AAA (K) AAA (K) CGC (R) 
+YYYYYYYC
+    0.271135    0.999999    2.112435    0.999990    0.857572    0.918989    1.005699    0.045376
+
+lfundG: h=  21  fhK=-1.193719e-07
+data: ACA (T) --- (-) GAT (D) 
+CY  5079.440039 10 0.8630   147 | 2/8
+ 10 h-m-p  1.0567 5.2834   0.1423 CCC    5078.454061  2 0.9917   168 | 2/8
+ 11 h-m-p  1.3751 8.0000   0.1026 YCC    5078.173756  2 0.9404   188 | 2/8
+ 12 h-m-p  1.6000 8.0000   0.0453 CCC    5078.090137  2 1.2447   209 | 2/8
+ 13 h-m-p  1.6000 8.0000   0.0142 YC     5078.082103  1 0.9435   227 | 2/8
+ 14 h-m-p  1.6000 8.0000   0.0035 YC     5078.081658  1 0.9001   245 | 2/8
+ 15 h-m-p  1.6000 8.0000   0.0002 Y      5078.081656  0 1.0589   262 | 2/8
+ 16 h-m-p  1.6000 8.0000   0.0000 Y      5078.081656  0 1.0345   279 | 2/8
+ 17 h-m-p  1.6000 8.0000   0.0000 Y      5078.081656  0 1.1203   296 | 2/8
+ 18 h-m-p  1.6000 8.0000   0.0000 -C     5078.081656  0 0.1000   314
+Out..
+lnL  = -5078.081656
+315 lfun, 945 eigenQcodon, 2520 P(t)
+
+Time used:  0:01
+
+CODONML in paml version 4.10.7, June 2023
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+ns = 3  	ls = 2448
+Reading sequences, sequential format..
+Reading seq # 1: OQ198042.1       Reading seq # 2: OQ198050.1       Reading seq # 3: LC047788.1       
+Sequences read..
+Counting site patterns..  0:00
+Compressing,    306 patterns at    816 /    816 sites (100.0%),  0:00
+Collecting fpatt[] & pose[],    306 patterns at    816 /    816 sites (100.0%),  0:00
+2 ambiguous codons are seen in the data:
+ NNN ---
+Counting codons..
+
+
+       24 bytes for distance
+   298656 bytes for conP
+     7344 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+((3, 1), 2);   MP score: -1
+    0.354867    0.775795    1.105003    1.069389    0.915027    0.959701    1.707012    0.305117    0.299212    1.099028
+
+ntime & nrate & np:     2     6    10
+
+Bounds (np=10):
+   0.000004   0.000001   0.000100 -99.000000 -99.000000   0.000001   1.000000   0.000100   0.000100   0.000100
+  50.000000   0.999999 999.000000  99.000000  99.000000   1.000000 999.000000 999.000000 999.000000 999.000000
+Qfactor_NS = 10.594041
+
+np =    10
+lnL0 = -5406.429470
+
+Iterating by ming2
+Initial: fx=  5406.429470
+x=  0.35487  0.77579  1.10500  1.06939  0.91503  0.95970  1.70701  0.30512  0.29921  1.09903
+
+  1 h-m-p  0.0000 0.0006 666.5428 +++    5261.986325  m 0.0006    16 | 1/10
+  2 h-m-p  0.0000 0.0000 726.6202 ++     5253.072826  m 0.0000    29 | 2/10
+  3 h-m-p  0.0005 0.0744  17.0224 ++YCCCC  5164.116084  4 0.0167    51 | 2/10
+  4 h-m-p  0.0008 0.0041 118.7502 YCCC   5153.914137  3 0.0016    69 | 2/10
+  5 h-m-p  0.0013 0.0066  84.4892 +CC    5140.525229  1 0.0055    85 | 2/10
+  6 h-m-p  0.0006 0.0031  46.5142 YC     5139.656850  1 0.0013    99 | 2/10
+  7 h-m-p  0.0054 0.0372  11.1745 YCCC   5138.465917  3 0.0112   117 | 2/10
+  8 h-m-p  0.0057 0.0395  22.1081 ++     5124.847002  m 0.0395   130 | 1/10
+  9 h-m-p -0.0000 -0.0000  82.2533 
+h-m-p:     -3.09084213e-19     -1.54542106e-18      8.22533405e+01  5124.847002
+..  | 1/10
+ 10 h-m-p  0.0000 0.0008 583.3291 YCCC   5121.755225  3 0.0000   158 | 1/10
+ 11 h-m-p  0.0001 0.0007 180.0159 ++     5112.077679  m 0.0007   171 | 2/10
+ 12 h-m-p  0.0005 0.0084 178.0128 +CCCCC  5090.006136  4 0.0028   193 | 2/10
+ 13 h-m-p  0.0014 0.0071 122.9142 +YCCC  5077.956947  3 0.0035   212 | 2/10
+ 14 h-m-p  0.0035 0.0174  18.0931 YC     5077.748498  1 0.0014   226 | 2/10
+ 15 h-m-p  0.0036 0.0179   7.0155 ++     5077.161797  m 0.0179   239 | 3/10
+ 16 h-m-p  0.0244 0.1221   1.7423 CCCC   5076.674851  3 0.0318   258 | 3/10
+ 17 h-m-p  0.0040 0.0202   3.5049 ++     5076.453385  m 0.0202   271 | 3/10
+ 18 h-m-p  0.0000 0.0000   0.2558 
+h-m-p:      9.13425230e-14      4.56712615e-13      2.55761464e-01  5076.453385
+..  | 3/10
+ 19 h-m-p  0.0032 1.5937  87.4373 --CCC  5076.285680  2 0.0000   307 | 3/10
+ 20 h-m-p  0.0001 0.0126  51.0156 +CYC   5075.937239  2 0.0003   324 | 3/10
+ 21 h-m-p  0.0004 0.0534  47.3066 +CCC   5074.944863  2 0.0015   342 | 3/10
+ 22 h-m-p  0.0059 2.1190  12.4097 YCC    5074.350076  2 0.0092   358 | 3/10
+ 23 h-m-p  0.0017 0.6147  67.5451 +YCCC  5072.953601  3 0.0045   377 | 3/10
+ 24 h-m-p  0.0553 0.2765   0.9142 YC     5072.909162  1 0.1047   391 | 3/10
+ 25 h-m-p  0.7687 3.8437   0.0997 CC     5072.905137  1 0.1929   413 | 3/10
+ 26 h-m-p  0.1940 0.9700   0.0771 YC     5072.892137  1 0.3164   434 | 3/10
+ 27 h-m-p  1.6000 8.0000   0.0032 Y      5072.891988  0 1.2235   454 | 2/10
+ 28 h-m-p  0.5325 8.0000   0.0074 Y      5072.891986  0 0.0694   474 | 2/10
+ 29 h-m-p  0.7412 8.0000   0.0007 Y      5072.891980  0 1.7327   495 | 2/10
+ 30 h-m-p  1.6000 8.0000   0.0001 Y      5072.891980  0 1.1072   516 | 2/10
+ 31 h-m-p  1.6000 8.0000   0.0000 C      5072.891980  0 0.4845   537 | 2/10
+ 32 h-m-p  0.9593 8.0000   0.0000 -C     5072.891980  0 0.0896   559 | 2/10
+ 33 h-m-p  0.1058 8.0000   0.0000 C      5072.891980  0 0.0265   580
+Out..
+lnL  = -5072.891980
+581 lfun, 2324 eigenQcodon, 6972 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -5090.641681  S = -4901.070603  -216.595486
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 306 patterns   0:03	did  20 / 306 patterns   0:03	did  30 / 306 patterns   0:03	did  40 / 306 patterns   0:03	did  50 / 306 patterns   0:03	did  60 / 306 patterns   0:03	did  70 / 306 patterns   0:03	did  80 / 306 patterns   0:03	did  90 / 306 patterns   0:03	did 100 / 306 patterns   0:03	did 110 / 306 patterns   0:03	did 120 / 306 patterns   0:03	did 130 / 306 patterns   0:03	did 140 / 306 patterns   0:03	did 150 / 306 patterns   0:03	did 160 / 306 patterns   0:03	did 170 / 306 patterns   0:03	did 180 / 306 patterns   0:03	did 190 / 306 patterns   0:03	did 200 / 306 patterns   0:03	did 210 / 306 patterns   0:03	did 220 / 306 patterns   0:03	did 230 / 306 patterns   0:03	did 240 / 306 patterns   0:03	did 250 / 306 patterns   0:03	did 260 / 306 patterns   0:04	did 270 / 306 patterns   0:04	did 280 / 306 patterns   0:04	did 290 / 306 patterns   0:04	did 300 / 306 patterns   0:04	did 306 / 306 patterns   0:04
+Time used:  0:04
+Running codeml on Astroviridae_43_OQ198042.1_WDW25708.1...
+
+CODONML in paml version 4.10.7, June 2023
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+ns = 3  	ls = 2247
+Reading sequences, sequential format..
+Reading seq # 1: OQ198042.1       Reading seq # 2: OQ198050.1       Reading seq # 3: LC047788.1       
+Sequences read..
+Counting site patterns..  0:00
+Compressing,    458 patterns at    749 /    749 sites (100.0%),  0:00
+Collecting fpatt[] & pose[],    458 patterns at    749 /    749 sites (100.0%),  0:00
+1 ambiguous codons are seen in the data:
+ ---
+Counting codons..
+
+
+       24 bytes for distance
+   447008 bytes for conP
+     7328 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+((3, 1), 2);   MP score: -1
+    0.496412    0.662260    0.939294    0.970546    0.875230    0.918238    0.528262    0.117759
+
+ntime & nrate & np:     2     5     8
+
+Bounds (np=8):
+   0.000004   0.000001   0.000100   0.000010   0.000001   0.000100   0.000100   0.000100
+  50.000000   0.999999 999.000000   0.999990   1.000000 999.000000 999.000000 999.000000
+Qfactor_NS = 11.072158
+
+np =     8
+lnL0 = -6009.648564
+
+Iterating by ming2
+Initial: fx=  6009.648564
+x=  0.49641  0.66226  0.93929  0.97055  0.87523  0.91824  0.52826  0.11776
+
+  1 h-m-p  0.0000 0.0003 703.1238 +++    5884.224834  m 0.0003    14 | 0/8
+  2 h-m-p  0.0002 0.0009 751.1700 YCYCCC  5777.289569  5 0.0005    33 | 0/8
+  3 h-m-p  0.0001 0.0005 139.9171 ++     5770.854739  m 0.0005    44 | 1/8
+  4 h-m-p  0.0005 0.0322 145.9335 ++YCCC  5744.002826  3 0.0047    62 | 1/8
+  5 h-m-p  0.0005 0.0027 110.7907 +YCCC  5738.944561  3 0.0014    79 | 1/8
+  6 h-m-p  0.0040 0.0198  26.1125 CCC    5736.333878  2 0.0031    94 | 1/8
+  7 h-m-p  0.0055 0.0338  14.7356 CYCCCC  5723.131215  5 0.0086   114 | 1/8
+  8 h-m-p  0.0018 0.0091  13.0241 CYC    5722.919098  2 0.0019   128 | 1/8
+  9 h-m-p  0.0781 1.1705   0.3230 +CYCCCC  5702.937335  5 0.5116   149 | 1/8
+ 10 h-m-p  0.5382 8.0000   0.3070 CCCC   5694.513801  3 0.7745   173 | 1/8
+ 11 h-m-p  0.6452 4.0710   0.3686 YC     5686.591975  1 1.4661   192 | 1/8
+ 12 h-m-p  1.2406 6.2028   0.3269 YCCCCC  5680.470546  5 1.5768   219 | 1/8
+ 13 h-m-p  1.6000 8.0000   0.2765 CCCC   5677.829331  3 2.0887   243 | 1/8
+ 14 h-m-p  0.7453 3.7263   0.5441 CCCCC  5676.027791  4 1.0016   269 | 1/8
+ 15 h-m-p  1.1157 8.0000   0.4884 CCCC   5674.753737  3 1.3165   293 | 1/8
+ 16 h-m-p  1.4803 8.0000   0.4344 YCC    5674.175744  2 0.5936   314 | 1/8
+ 17 h-m-p  0.4430 8.0000   0.5820 +YYCC  5673.422838  3 1.3523   337 | 1/8
+ 18 h-m-p  1.6000 8.0000   0.2086 YC     5673.254977  1 0.6884   356 | 1/8
+ 19 h-m-p  0.5036 8.0000   0.2852 +YCC   5673.079355  2 1.3228   378 | 1/8
+ 20 h-m-p  1.6000 8.0000   0.1254 CC     5672.925673  1 2.4323   398 | 1/8
+ 21 h-m-p  1.6000 8.0000   0.0370 +YC    5672.607241  1 5.1177   418 | 1/8
+ 22 h-m-p  1.2497 8.0000   0.1515 YYCC   5672.378872  3 0.8950   440 | 1/8
+ 23 h-m-p  0.3437 8.0000   0.3945 +YYC   5672.201862  2 1.2245   461 | 1/8
+ 24 h-m-p  1.6000 8.0000   0.0258 YC     5672.191853  1 0.8409   480 | 1/8
+ 25 h-m-p  1.6000 8.0000   0.0092 Y      5672.191303  0 1.2158   498 | 1/8
+ 26 h-m-p  1.6000 8.0000   0.0043 Y      5672.191264  0 1.1964   516 | 1/8
+ 27 h-m-p  1.6000 8.0000   0.0001 Y      5672.191264  0 0.9450   534 | 1/8
+ 28 h-m-p  1.6000 8.0000   0.0000 ----Y  5672.191264  0 0.0016   556
+Out..
+lnL  = -5672.191264
+557 lfun, 1671 eigenQcodon, 4456 P(t)
+
+Time used:  0:02
+
+CODONML in paml version 4.10.7, June 2023
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+ns = 3  	ls = 2247
+Reading sequences, sequential format..
+Reading seq # 1: OQ198042.1       Reading seq # 2: OQ198050.1       Reading seq # 3: LC047788.1       
+Sequences read..
+Counting site patterns..  0:00
+Compressing,    458 patterns at    749 /    749 sites (100.0%),  0:00
+Collecting fpatt[] & pose[],    458 patterns at    749 /    749 sites (100.0%),  0:00
+1 ambiguous codons are seen in the data:
+ ---
+Counting codons..
+
+
+       24 bytes for distance
+   447008 bytes for conP
+    10992 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+((3, 1), 2);   MP score: -1
+    0.279363    0.824589    1.250348    0.944214    0.895978    0.934967    1.490077    0.547153    0.410656    1.136784
+
+ntime & nrate & np:     2     6    10
+
+Bounds (np=10):
+   0.000004   0.000001   0.000100 -99.000000 -99.000000   0.000001   1.000000   0.000100   0.000100   0.000100
+  50.000000   0.999999 999.000000  99.000000  99.000000   1.000000 999.000000 999.000000 999.000000 999.000000
+Qfactor_NS = 8.750654
+
+np =    10
+lnL0 = -6236.155757
+
+Iterating by ming2
+Initial: fx=  6236.155757
+x=  0.27936  0.82459  1.25035  0.94421  0.89598  0.93497  1.49008  0.54715  0.41066  1.13678
+
+  1 h-m-p  0.0000 0.0013 1279.6605 ++++   5904.701678  m 0.0013    17 | 0/10
+  2 h-m-p  0.0000 0.0000 1920.4863 
+h-m-p:      0.00000000e+00      0.00000000e+00      1.92048634e+03  5904.701678
+..  | 0/10
+  3 h-m-p  0.0000 0.0001 1109.1654 +YYCCC  5876.889255  4 0.0000    47 | 0/10
+  4 h-m-p  0.0000 0.0002 1351.9459 +YYYYCYCCCC  5772.203842 10 0.0001    75 | 0/10
+  5 h-m-p  0.0015 0.0123 129.8960 YCCC   5747.560184  3 0.0031    93 | 0/10
+  6 h-m-p  0.0002 0.0010 263.8024 ++     5723.808560  m 0.0010   106 | 1/10
+  7 h-m-p  0.0028 0.0167  98.3476 YYYYC  5715.107775  4 0.0028   123 | 1/10
+  8 h-m-p  0.0058 0.0289  41.6900 +YYYCCC  5693.967976  5 0.0214   144 | 1/10
+  9 h-m-p  0.0151 0.0757  15.6553 CC     5690.967375  1 0.0230   159 | 0/10
+ 10 h-m-p  0.0037 0.0187  37.1930 YCCC   5689.918120  3 0.0021   177 | 0/10
+ 11 h-m-p  0.0020 0.0108  40.4249 ++     5684.620772  m 0.0108   190 | 1/10
+ 12 h-m-p  0.0125 0.2413  27.5755 CYC    5683.096372  2 0.0121   206 | 1/10
+ 13 h-m-p  0.2100 1.0501   0.4119 +CC    5679.066648  1 0.7203   222 | 1/10
+ 14 h-m-p  0.0025 0.0127  11.2186 ++     5677.007894  m 0.0127   244 | 2/10
+ 15 h-m-p  0.1873 4.2646   0.7577 +CYCCCC  5670.919858  5 1.0742   267 | 2/10
+ 16 h-m-p  1.4660 7.3302   0.4173 YYCC   5667.891972  3 1.0699   292 | 2/10
+ 17 h-m-p  1.6000 8.0000   0.2737 CYC    5666.685526  2 0.4348   316 | 2/10
+ 18 h-m-p  0.1016 1.9418   1.1708 +YCCCC  5664.635113  4 0.4197   345 | 1/10
+ 19 h-m-p  0.0425 0.2124   9.2055 -YC    5664.623632  1 0.0017   360 | 1/10
+ 20 h-m-p  0.0388 1.4268   0.3976 +++    5662.942782  m 1.4268   374 | 1/10
+ 21 h-m-p  0.0000 0.0000   0.5991 
+h-m-p:      0.00000000e+00      0.00000000e+00      5.99099376e-01  5662.942782
+..  | 1/10
+ 22 h-m-p  0.0000 0.0162 139.3101 CYC    5662.854761  2 0.0000   418 | 1/10
+ 23 h-m-p  0.0000 0.0070  60.4980 CC     5662.803649  1 0.0000   433 | 1/10
+ 24 h-m-p  0.0016 0.7777  10.0392 C      5662.729911  0 0.0015   446 | 1/10
+ 25 h-m-p  0.0001 0.0006   8.1915 ++     5662.705072  m 0.0006   459 | 2/10
+ 26 h-m-p  0.0006 0.3039   9.2337 ++CC   5662.486232  1 0.0134   476 | 2/10
+ 27 h-m-p  0.0078 0.1122  15.7978 YCCC   5661.891053  3 0.0196   494 | 2/10
+ 28 h-m-p  0.0614 0.6039   5.0291 -YC    5661.832678  1 0.0063   509 | 2/10
+ 29 h-m-p  0.0166 3.8375   1.9139 ++CCC  5661.350750  2 0.3203   528 | 2/10
+ 30 h-m-p  0.0885 0.4424   4.5099 YC     5661.204095  1 0.0450   542 | 2/10
+ 31 h-m-p  0.6593 8.0000   0.3080 CCC    5660.908493  2 0.6407   559 | 2/10
+ 32 h-m-p  0.9847 8.0000   0.2004 YCCC   5660.711061  3 2.1612   585 | 2/10
+ 33 h-m-p  1.6000 8.0000   0.0615 YC     5660.681927  1 1.0887   607 | 2/10
+ 34 h-m-p  1.2918 8.0000   0.0519 YC     5660.675435  1 0.9534   629 | 2/10
+ 35 h-m-p  1.3347 8.0000   0.0370 YC     5660.673987  1 0.9372   651 | 2/10
+ 36 h-m-p  1.6000 8.0000   0.0051 YC     5660.673871  1 0.8226   673 | 2/10
+ 37 h-m-p  1.6000 8.0000   0.0011 Y      5660.673867  0 1.1982   694 | 2/10
+ 38 h-m-p  1.6000 8.0000   0.0005 Y      5660.673867  0 0.8921   715 | 2/10
+ 39 h-m-p  1.6000 8.0000   0.0002 Y      5660.673867  0 0.3094   736 | 2/10
+ 40 h-m-p  0.4396 8.0000   0.0002 ---Y   5660.673867  0 0.0017   760 | 2/10
+ 41 h-m-p  0.0160 8.0000   0.0002 ---Y   5660.673867  0 0.0001   784
+Out..
+lnL  = -5660.673867
+785 lfun, 3140 eigenQcodon, 9420 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -5737.925733  S = -5461.378344  -267.366556
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 458 patterns   0:04	did  20 / 458 patterns   0:04	did  30 / 458 patterns   0:04	did  40 / 458 patterns   0:04	did  50 / 458 patterns   0:04	did  60 / 458 patterns   0:04	did  70 / 458 patterns   0:04	did  80 / 458 patterns   0:04	did  90 / 458 patterns   0:04	did 100 / 458 patterns   0:04	did 110 / 458 patterns   0:04	did 120 / 458 patterns   0:04	did 130 / 458 patterns   0:04	did 140 / 458 patterns   0:04	did 150 / 458 patterns   0:04	did 160 / 458 patterns   0:04	did 170 / 458 patterns   0:04	did 180 / 458 patterns   0:04	did 190 / 458 patterns   0:04	did 200 / 458 patterns   0:04	did 210 / 458 patterns   0:04	did 220 / 458 patterns   0:04	did 230 / 458 patterns   0:04	did 240 / 458 patterns   0:04	did 250 / 458 patterns   0:04	did 260 / 458 patterns   0:04	did 270 / 458 patterns   0:04	did 280 / 458 patterns   0:04	did 290 / 458 patterns   0:04	did 300 / 458 patterns   0:04	did 310 / 458 patterns   0:04	did 320 / 458 patterns   0:04	did 330 / 458 patterns   0:04	did 340 / 458 patterns   0:04	did 350 / 458 patterns   0:04	did 360 / 458 patterns   0:04	did 370 / 458 patterns   0:04	did 380 / 458 patterns   0:04	did 390 / 458 patterns   0:04	did 400 / 458 patterns   0:04	did 410 / 458 patterns   0:04	did 420 / 458 patterns   0:04	did 430 / 458 patterns   0:04	did 440 / 458 patterns   0:04	did 450 / 458 patterns   0:04	did 458 / 458 patterns   0:04
+Time used:  0:04
+*************************** ANALYZING RESULTS ***************************
+-7799.074940
+-7794.208066
+9.733748
+0.007697
+-5078.081656
+-5072.891980
+10.379352
+0.005574
+-5672.191264
+-5660.673867
+23.034794
+1e-05
+Summary saved to /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/output/Astroviridae_43_test_20250808_034339/summary_site-model_Astroviridae_43.tsv
+*************************** CODEML PIPELINE COMPLETE ***************************

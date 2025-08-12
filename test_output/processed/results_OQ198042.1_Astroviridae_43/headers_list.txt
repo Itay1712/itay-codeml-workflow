@@ -1,0 +1,3 @@
+>lcl|OQ198042.1_prot_WDW25706.1_1 [protein=ORF1ab polyprotein] [exception=ribosomal slippage] [protein_id=WDW25706.1] [location=join(386..2791,2791..4299)] [gbkey=CDS]
+>lcl|OQ198042.1_prot_WDW25707.1_2 [protein=ORF1a] [protein_id=WDW25707.1] [location=386..2836] [gbkey=CDS]
+>lcl|OQ198042.1_prot_WDW25708.1_3 [protein=capsid protein] [protein_id=WDW25708.1] [location=4244..6478] [gbkey=CDS]

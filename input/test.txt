@@ -1,0 +1,4 @@
+Ancestral node	Accession	Host
+Node26	OQ198042.1	Canis
+Node25	OQ198050.1	Canis
+Root	LC047788.1	Bos

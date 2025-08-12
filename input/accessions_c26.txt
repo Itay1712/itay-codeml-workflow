@@ -1,0 +1,26 @@
+Ancestral node	Accession	Host
+Node7	KJ713297.1	Camelus
+Node12	KP223131.1	Homo
+Node34	KR011266.1	Homo
+Node131	KT368851.1	Camelus
+Node7	KT368875.1	Camelus
+Node224	KT374050.1	Homo
+Node224	KT374053.1	Homo
+Node224	KT374054.1	Homo
+Node224	KX034099.1	Homo
+Node65	KX108941.1	Camelus
+Root	KX574227.1	Pipistrellus
+Node96	KY581700.1	Camelus
+Node33	KY688119.1	Homo
+Node45	MF598596.1	Camelus
+Node286	MF598603.1	Camelus
+Node286	MF598632.1	Camelus
+Node96	MF598636.1	Camelus
+Node45	MF598653.1	Camelus
+Node45	MF598674.1	Camelus
+Node224	MG011342.2	Homo
+Node224	MH310912.1	Homo
+Node224	MK462251.1	Homo
+Node470	MN655002.1	Camelus
+Root	MZ268405.1	Camelus
+Root	OP906306.1	Camelus

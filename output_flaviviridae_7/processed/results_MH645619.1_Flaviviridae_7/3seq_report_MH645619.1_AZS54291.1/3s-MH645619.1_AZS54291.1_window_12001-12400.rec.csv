@@ -1,0 +1,2 @@
+P_ACCNUM,Q_ACCNUM,C_ACCNUM,m,n,k,p,HS?,log(p),DS(p),DS(p),min_rec_length,breakpoints
+MT671301.1 Codon alignment [12001-12400],MG589939.1 Codon alignment [12001-12400],MN115817.1 Codon alignment [12001-12400],19,28,22,0.000018697994,0,-4.7282,0.04977,4.976504e-02,83,84-107 & 395-400

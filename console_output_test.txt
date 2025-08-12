@@ -1,0 +1,593 @@
+Dependency check failed:
+  - python==3.10	installed 3.10.17
+Proceed anyway? [y/N] <-> REF_ACC will be selected after sample pruning
+Globals written to /home/itay/bioinfo/viruses/orthologs2/scripts/globals.sh
+*************************** GETTING CODEML INPUT ***************************
+true
+/home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/output/Astroviridae_43_test_20250810_164424
+########################################### PREPARING SAMPLES ###########################################
+Missing samples at /home/itay/bioinfo/viruses/orthologs2/./input/rooted_trees/Astroviridae_43.rooted.anc_recon.tree:\nLC047789.1,LC047791.1,LC047792.1,LC047794.1,LC047795.1,LC047799.1,LC047801.1,ON624258.1,ON624262.1,ON624270.1,ON624274.1,ON624283.1,ON682273.1,ON682274.1,ON682275.1,ON682277.1,ON682279.1,ON682281.1,ON682283.1,ON682285.1,ON682288.1,ON682291.1,ON682300.1,ON682301.1,ON682302.1
+########################################### TREE PIPELINE ###########################################
+=== Step 1: Cleaning tree labels ===
+=== Step 2: Mark tree ===
+Marked tree saved as /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_marked.tree
+Canis
+=== Step 3: Creating leaf only tree (not used) ===
+leaf only tree saved in /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_marked_leaf_only.tree
+=== Step 4: Removing leaves that are not found in ACCESSIONS.txt ===
+Pruned tree saved as '/home/itay/bioinfo/viruses/orthologs2/./test_output/processed/trees_output/tree_tmp_clean_marked_pruned.tree'
+=== Step 5: Limiting tree to 150 leaves ===
+Final tree saved as /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43.tree
+=== Pipeline complete ===
+Number of leaves in the reduced tree: 3
+Comparing: 'OQ198042.1' vs 'OQ198050.1'
+Comparing: 'OQ198050.1' vs 'OQ198050.1'
+Comparing: 'LC047788.1' vs 'OQ198050.1'
+<-> Selecting REF_ACC from filtered ACCESSIONS_FILE
+Going to process 3 viruses from /home/itay/bioinfo/viruses/orthologs2/./input/test.txt
+  OQ198042.1    CDS=  3  Len=   6514
+  OQ198050.1    CDS=  3  Len=   6433
+  LC047788.1    CDS=  3  Len=   6190
+Selected top virus: OQ198042.1 (CDS=3 Len=6514)
+########################################### PHYLIP PIPELINE ###########################################
+[Stage 1] Getting reference and targets...
++--------------+
+| Ref:         |
+| - OQ198042.1 |
+| Targets:     |
+| - OQ198050.1 |
+| - LC047788.1 |
++--------------+
+[Stage 2] Finding orthologs...
+find_orthologs.sh | [REF] extracting only  from OQ198042.1…
+find_orthologs.sh | [REF] building reference BLAST DB…
+
+
+Building a new DB, current time: 08/10/2025 16:44:36
+New DB name:   /home/itay/bioinfo/viruses/orthologs2/test_output/processed/results_OQ198042.1_Astroviridae_43/ref_prot_db
+New DB title:  /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/ref_proteins.fasta
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 3 sequences in 0.000332832 seconds.
+
+
+find_orthologs.sh | [REF] preparing global FASTAs for each ref CDS…
+find_orthologs.sh | [ALL] Stage 2: fetching all target FASTAs…
+find_orthologs.sh | [ALL] Stage 3: building target BLAST DBs…
+
+
+Building a new DB, current time: 08/10/2025 16:44:42
+
+
+Building a new DB, current time: 08/10/2025 16:44:42
+New DB name:   /home/itay/bioinfo/viruses/orthologs2/test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/LC047788.1/LC047788.1_prot_db
+New DB name:   /home/itay/bioinfo/viruses/orthologs2/test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/OQ198050.1/OQ198050.1_prot_db
+New DB title:  /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/LC047788.1/LC047788.1_proteins.fasta
+New DB title:  /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/reciprocal_pairs/OQ198050.1/OQ198050.1_proteins.fasta
+Sequence type: Protein
+Sequence type: Protein
+Keep MBits: T
+Keep MBits: T
+Maximum file size: 3000000000B
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 3 sequences in 0.000355959 seconds.
+Adding sequences from FASTA; added 3 sequences in 0.000500917 seconds.
+
+
+
+
+find_orthologs.sh | [ALL] Stage 4: reciprocal‐BLAST + append to globals…
+[Stage 3] Processing each ref CDS...
+
+
+
+
+========================================== Processing CDS: [OQ198042.1_WDW25706.1] ==========================================
+
+
+
+
+
+
+--------------[3.1] Codon alignment
+
+
+/home/itay/miniconda3/envs/codeml_env/lib/python3.10/site-packages/Bio/SeqIO/FastaIO.py:203: BiopythonDeprecationWarning: Previously, the FASTA parser silently ignored comments at the beginning of the FASTA file (before the first sequence).
+
+Nowadays, the FASTA file format is usually understood not to have any such comments, and most software packages do not allow them. Therefore, the use of comments at the beginning of a FASTA file is now deprecated in Biopython.
+
+In a future Biopython release, this deprecation warning will be replaced by a ValueError. To avoid this, there are three options:
+
+(1) Modify your FASTA file to remove such comments at the beginning of the file.
+
+(2) Use SeqIO.parse with the 'fasta-pearson' format instead of 'fasta'. This format is consistent with the FASTA format defined by William Pearson's FASTA aligner software. Thie format allows for comments before the first sequence; lines starting with the ';' character anywhere in the file are also regarded as comment lines and are ignored.
+
+(3) Use the 'fasta-blast' format. This format regards any lines starting with '!', '#', or ';' as comment lines. The 'fasta-blast' format may be safer than the 'fasta-pearson' format, as it explicitly indicates which lines are comments. 
+  warnings.warn(
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: 8192 kb
+rescale = 1
+All-to-all alignment.
+    0 / 3    1 / 3tbfast-pair (aa) Version 7.525
+alg=L, model=BLOSUM62, 2.00, -0.10, +0.10, noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 3
+done.
+
+Progressive alignment ... 
+STEP     1 /2 STEP     2 /2 
+done.
+tbfast (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+rescale = 1
+
+    0 / 3
+Segment   1/  1    1-1305
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-1  identical.   STEP 002-002-1  identical.   STEP 002-001-0  identical.   STEP 002-001-1  identical.   
+Converged.
+
+done
+dvtditr (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Warning] Sequence ended with a stop codon - translated 1304 aa from 1305 codons.
+[Warning] Sequence ended with a stop codon - translated 1187 aa from 1188 codons.
+[Warning] Sequence ended with a stop codon - translated 1304 aa from 1305 codons.
+Initial aligned FASTA file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25706.1/aligned_codons.fasta
+
+
+--------------[3.2] Masking poorly aligned regions
+
+
+Found 1 poor region(s):
+  Codons 80-80 (nt 238-240)
+Masked FASTA written to /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25706.1/aligned_codons_masked_poor.fasta
+
+
+--------------[3.3] Recombination filtering report
+
+
+Max sequence length: 3912 nt
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1-400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_201-600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_401-800.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_601-1000.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_801-1200.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1001-1400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1201-1600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1401-1800.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1601-2000.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_1801-2200.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_2001-2400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_2201-2600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_2401-2800.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_2601-3000.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_2801-3200.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_3001-3400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_3201-3600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25706.1/window_3401-3800.fasta
+Running 3SEQ on window: window_1-400
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_1-400 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_1001-1400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_1001-1400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_1201-1600
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_1201-1600 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_1401-1800
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25706.1_window_1401-1800
+Running 3SEQ on window: window_1601-2000
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25706.1_window_1601-2000
+Running 3SEQ on window: window_1801-2200
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_1801-2200 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_2001-2400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_2001-2400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_201-600
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_201-600 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_2201-2600
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25706.1_window_2201-2600
+Running 3SEQ on window: window_2401-2800
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25706.1_window_2401-2800
+Running 3SEQ on window: window_2601-3000
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_2601-3000 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_2801-3200
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_2801-3200 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_3001-3400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_3001-3400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_3201-3600
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_3201-3600 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_3401-3800
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_3401-3800 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_401-800
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_401-800 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_601-1000
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_601-1000 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_801-1200
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25706.1_window_801-1200 — only 2 unique sequences (need ≥ 3)
+
+
+--------------[3.4] Masking recombination regions
+
+
+No mask file for  — skipping masking recom regions
+
+
+--------------[3.5] Convert to Phylip
+
+
+Phylip file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43_OQ198042.1_WDW25706.1.phy
+=== Pipeline complete ===
+
+
+
+
+========================================== Processing CDS: [OQ198042.1_WDW25707.1] ==========================================
+
+
+
+
+
+
+--------------[3.1] Codon alignment
+
+
+/home/itay/miniconda3/envs/codeml_env/lib/python3.10/site-packages/Bio/SeqIO/FastaIO.py:203: BiopythonDeprecationWarning: Previously, the FASTA parser silently ignored comments at the beginning of the FASTA file (before the first sequence).
+
+Nowadays, the FASTA file format is usually understood not to have any such comments, and most software packages do not allow them. Therefore, the use of comments at the beginning of a FASTA file is now deprecated in Biopython.
+
+In a future Biopython release, this deprecation warning will be replaced by a ValueError. To avoid this, there are three options:
+
+(1) Modify your FASTA file to remove such comments at the beginning of the file.
+
+(2) Use SeqIO.parse with the 'fasta-pearson' format instead of 'fasta'. This format is consistent with the FASTA format defined by William Pearson's FASTA aligner software. Thie format allows for comments before the first sequence; lines starting with the ';' character anywhere in the file are also regarded as comment lines and are ignored.
+
+(3) Use the 'fasta-blast' format. This format regards any lines starting with '!', '#', or ';' as comment lines. The 'fasta-blast' format may be safer than the 'fasta-pearson' format, as it explicitly indicates which lines are comments. 
+  warnings.warn(
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: 8192 kb
+rescale = 1
+All-to-all alignment.
+    0 / 3    1 / 3tbfast-pair (aa) Version 7.525
+alg=L, model=BLOSUM62, 2.00, -0.10, +0.10, noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 3
+done.
+
+Progressive alignment ... 
+STEP     1 /2 STEP     2 /2 
+done.
+tbfast (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+rescale = 1
+
+    0 / 3
+Segment   1/  1    1- 817
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-1  identical.   STEP 002-002-1  identical.   STEP 002-001-0  identical.   STEP 002-001-1  identical.   
+Converged.
+
+done
+dvtditr (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Warning] Sequence ended with a stop codon - translated 816 aa from 817 codons.
+[Warning] Sequence ended with a stop codon - translated 699 aa from 700 codons.
+[Warning] Sequence ended with a stop codon - translated 816 aa from 817 codons.
+Initial aligned FASTA file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25707.1/aligned_codons.fasta
+
+
+--------------[3.2] Masking poorly aligned regions
+
+
+Found 1 poor region(s):
+  Codons 80-80 (nt 238-240)
+Masked FASTA written to /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25707.1/aligned_codons_masked_poor.fasta
+
+
+--------------[3.3] Recombination filtering report
+
+
+Max sequence length: 2448 nt
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1-400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_201-600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_401-800.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_601-1000.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_801-1200.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1001-1400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1201-1600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1401-1800.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1601-2000.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_1801-2200.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25707.1/window_2001-2400.fasta
+Running 3SEQ on window: window_1-400
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_1-400 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_1001-1400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_1001-1400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_1201-1600
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_1201-1600 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_1401-1800
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25707.1_window_1401-1800
+Running 3SEQ on window: window_1601-2000
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25707.1_window_1601-2000
+Running 3SEQ on window: window_1801-2200
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_1801-2200 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_2001-2400
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_2001-2400 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_201-600
+[INFO][0m 0 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_201-600 — 3SEQ output not generated (likely <3 unique sequences)
+Running 3SEQ on window: window_401-800
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_401-800 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_601-1000
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_601-1000 — only 2 unique sequences (need ≥ 3)
+Running 3SEQ on window: window_801-1200
+[INFO][0m 1 duplicated records removed
+Skipping OQ198042.1_WDW25707.1_window_801-1200 — only 2 unique sequences (need ≥ 3)
+
+
+--------------[3.4] Masking recombination regions
+
+
+No mask file for  — skipping masking recom regions
+
+
+--------------[3.5] Convert to Phylip
+
+
+Phylip file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43_OQ198042.1_WDW25707.1.phy
+=== Pipeline complete ===
+
+
+
+
+========================================== Processing CDS: [OQ198042.1_WDW25708.1] ==========================================
+
+
+
+
+
+
+--------------[3.1] Codon alignment
+
+
+/home/itay/miniconda3/envs/codeml_env/lib/python3.10/site-packages/Bio/SeqIO/FastaIO.py:203: BiopythonDeprecationWarning: Previously, the FASTA parser silently ignored comments at the beginning of the FASTA file (before the first sequence).
+
+Nowadays, the FASTA file format is usually understood not to have any such comments, and most software packages do not allow them. Therefore, the use of comments at the beginning of a FASTA file is now deprecated in Biopython.
+
+In a future Biopython release, this deprecation warning will be replaced by a ValueError. To avoid this, there are three options:
+
+(1) Modify your FASTA file to remove such comments at the beginning of the file.
+
+(2) Use SeqIO.parse with the 'fasta-pearson' format instead of 'fasta'. This format is consistent with the FASTA format defined by William Pearson's FASTA aligner software. Thie format allows for comments before the first sequence; lines starting with the ';' character anywhere in the file are also regarded as comment lines and are ignored.
+
+(3) Use the 'fasta-blast' format. This format regards any lines starting with '!', '#', or ';' as comment lines. The 'fasta-blast' format may be safer than the 'fasta-pearson' format, as it explicitly indicates which lines are comments. 
+  warnings.warn(
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: 8192 kb
+rescale = 1
+All-to-all alignment.
+    0 / 3    1 / 3tbfast-pair (aa) Version 7.525
+alg=L, model=BLOSUM62, 2.00, -0.10, +0.10, noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 3
+done.
+
+Progressive alignment ... 
+STEP     1 /2 STEP     2 /2 
+done.
+tbfast (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+rescale = 1
+
+    0 / 3
+Segment   1/  1    1- 750
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-1  identical.   STEP 002-002-1  identical.   STEP 002-001-0  identical.   STEP 002-001-1  identical.   
+Converged.
+
+done
+dvtditr (aa) Version 7.525
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Warning] Sequence ended with a stop codon - translated 744 aa from 745 codons.
+[Warning] Sequence ended with a stop codon - translated 746 aa from 747 codons.
+[Warning] Sequence ended with a stop codon - translated 744 aa from 745 codons.
+Initial aligned FASTA file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25708.1/aligned_codons.fasta
+
+
+--------------[3.2] Masking poorly aligned regions
+
+
+No poorly aligned regions found
+Masked FASTA written to /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/globals/OQ198042.1_WDW25708.1/aligned_codons_masked_poor.fasta
+
+
+--------------[3.3] Recombination filtering report
+
+
+Max sequence length: 2247 nt
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1-400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_201-600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_401-800.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_601-1000.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_801-1200.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1001-1400.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1201-1600.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1401-1800.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1601-2000.fasta
+Wrote: /home/itay/bioinfo/viruses/orthologs2/./test_output/processed/results_OQ198042.1_Astroviridae_43/3seq_report_OQ198042.1_WDW25706.1/3seq_windows_OQ198042.1_WDW25708.1/window_1801-2200.fasta
+Running 3SEQ on window: window_1-400
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_1-400
+Running 3SEQ on window: window_1001-1400
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_1001-1400
+Running 3SEQ on window: window_1201-1600
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_1201-1600
+Running 3SEQ on window: window_1401-1800
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_1401-1800
+Running 3SEQ on window: window_1601-2000
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_1601-2000
+Running 3SEQ on window: window_1801-2200
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_1801-2200
+Running 3SEQ on window: window_201-600
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_201-600
+Running 3SEQ on window: window_401-800
+[INFO][0m 0 duplicated records removed
+✅ Recombination found in: OQ198042.1_WDW25708.1_window_401-800
+Running 3SEQ on window: window_601-1000
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_601-1000
+Running 3SEQ on window: window_801-1200
+[INFO][0m 0 duplicated records removed
+ℹ️ No recombination detected in: OQ198042.1_WDW25708.1_window_801-1200
+
+
+--------------[3.4] Masking recombination regions
+
+
+No mask file for  — skipping masking recom regions
+
+
+--------------[3.5] Convert to Phylip
+
+
+Phylip file created at: /home/itay/bioinfo/viruses/orthologs2/./test_output/codeml/input/Astroviridae_43_OQ198042.1_WDW25708.1.phy
+=== Pipeline complete ===

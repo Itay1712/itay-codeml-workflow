@@ -1,0 +1,2 @@
+P_ACCNUM,Q_ACCNUM,C_ACCNUM,m,n,k,p,HS?,log(p),DS(p),DS(p),min_rec_length,breakpoints
+OQ198042.1 Codon alignment [201-600],OQ198050.1 Codon alignment [201-600],LC047788.1 Codon alignment [201-600],66,14,5,0.007821212523,0,-2.1067,0.04602,4.601922e-02,35,184-186 & 220-226
