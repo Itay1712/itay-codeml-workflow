@@ -75,4 +75,4 @@ Tan, C., Ogbunugafor, C. B., Geoghegan, J. L., et al. (2024). *The evolutionary 
 Dataset available via Zenodo: https://doi.org/10.5281/zenodo.10497734  
 Licensed under Creative Commons Attribution 4.0 International (CC-BY 4.0).  
 
-The dataset is located in the `generate_accessions/` folder.
+This includes the dataset in `generate_accessions/` and rooted tree files in `input/rooted_trees/`.
