@@ -2,7 +2,7 @@
 CODEML_GET_INPUT: true
 CODEML_RUN: true
 CODEML_ANALYSIS: true
-OUTPUT_DIR: ./test_output
+OUTPUT_DIR: ./output_test
 
 GROUP: Astroviridae_43
 GROUPING_COLUMN: Host
@@ -20,4 +20,5 @@ ANALYSIS: site-model
 
 ## overwrite default
 CODEML_RESULTS_DIR: "${OUTPUT_DIR}/codeml/output/${GROUP}_test_$(date +%Y%m%d_%H%M%S)"
+
 
